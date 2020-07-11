@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/images"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#9A000000"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/icon"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/etfname"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="text"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_lname"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/etuname"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/etphone"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telephone_number"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_email"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_action_mailnew"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/etconfirmemail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_email"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_action_mailnew"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_password"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/etconfirmpass"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10sp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="10sp"
+                android:textSize="14sp"/>
+
+
+
+            <Button
+                android:id="@+id/resgistered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_home"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/login_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/login_here"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

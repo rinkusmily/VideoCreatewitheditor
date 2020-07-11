@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MusicActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPurple"
+
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/icon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".95"
+                android:textColor="@color/white"
+                android:text="@string/music"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPurple"/>
+
+            <ImageView
+                android:id="@+id/img_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_star"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="end"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_tv"
+            android:text="@string/happy"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_tv"
+            android:text="@string/angry"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_tv"
+            android:text="@string/sad"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_tv"
+            android:text="@string/fear"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+            android:layout_marginTop="10dp"
+          />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tabLayout"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ShareAcitvity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPurple"
+
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/icon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".95"
+                android:textColor="@color/white"
+                android:text="@string/share"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPurple"/>
+
+            <ImageView
+                android:id="@+id/img_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_star"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lin_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/img_second"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.4"
+                android:scaleType="fitXY"
+                android:background="@drawable/slide_one" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.7"
+
+                >
+                <TextView
+                    android:id="@+id/tv_title_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tv_description_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Size :"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="10sp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="360*000\n ADMOB"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@android:color/holo_red_dark"
+            />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:background="@color/colorGrey"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/colorGrey"/>
+
+
+
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/twitter"/>
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/facebook"/>
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/instagram"/>
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whatsapp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

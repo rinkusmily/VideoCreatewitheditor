@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "47865612363",
+    "firebase_url": "https://videoeditingapp-272708.firebaseio.com",
+    "project_id": "videoeditingapp-272708",
+    "storage_bucket": "videoeditingapp-272708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47865612363:android:a9aee9f6aff7c89818e5ce",
+        "android_client_info": {
+          "package_name": "com.shrinkcom.videocreate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47865612363-f3qgah6h87en5gccd1k89lc2r1n6eb1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrinkcom.videocreate",
+            "certificate_hash": "5c1d38b8fa097a18874905cca5d70147f21755a8"
+          }
+        },
+        {
+          "client_id": "47865612363-fv9rlodo5n5kn5o4mirqmltdc7rn26q2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFc8GEieS70TCedblwFummO8Buv1RXGPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47865612363-fv9rlodo5n5kn5o4mirqmltdc7rn26q2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

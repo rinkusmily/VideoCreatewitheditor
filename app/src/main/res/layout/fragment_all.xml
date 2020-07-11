@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AllFragment">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gv_folder"
+        android:numColumns="3"
+        android:layout_above="@+id/gv"
+        android:layout_marginBottom="10dp"></GridView>
+
+    <com.shrinkcom.videocreate.activities.HorizontalListView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:numColumns="3"
+        >
+
+    </com.shrinkcom.videocreate.activities.HorizontalListView>
+
+</RelativeLayout>

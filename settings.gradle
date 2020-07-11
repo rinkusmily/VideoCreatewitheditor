@@ -1,0 +1,3 @@
+rootProject.name='VideoCreate'
+include ':app', ':photoeditor'
+
